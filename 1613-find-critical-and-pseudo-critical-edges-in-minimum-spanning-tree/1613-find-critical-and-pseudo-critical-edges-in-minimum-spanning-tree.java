@@ -1,88 +1,122 @@
-class UnionFind {
-  public UnionFind(int n) {
-    id = new int[n];
-    rank = new int[n];
-    for (int i = 0; i < n; ++i)
-      id[i] = i;
-  }
-
-  public void unionByRank(int u, int v) {
-    final int i = find(u);
-    final int j = find(v);
-    if (i == j)
-      return;
-    if (rank[i] < rank[j]) {
-      id[i] = j;
-    } else if (rank[i] > rank[j]) {
-      id[j] = i;
-    } else {
-      id[i] = j;
-      ++rank[j];
-    }
-  }
-
-  public int find(int u) {
-    return id[u] == u ? u : (id[u] = find(id[u]));
-  }
-
-  private int[] id;
-  private int[] rank;
-}
-
 class Solution {
-  public List<List<Integer>> findCriticalAndPseudoCriticalEdges(int n, int[][] edges) {
-    List<Integer> criticalEdges = new ArrayList<>();
-    List<Integer> pseudoCriticalEdges = new ArrayList<>();
+    int N;
+    
+    public int Kruskal(int[][] vec, int skip_edge, int add_edge) {
 
-    // Record the index information, so edges[i] := (u, v, weight, index).
-    for (int i = 0; i < edges.length; ++i)
-      edges[i] = new int[] {edges[i][0], edges[i][1], edges[i][2], i};
+        int sum = 0;
 
-    // Sort by weight.
-    Arrays.sort(edges, (a, b) -> a[2] - b[2]);
+        UnionFind uf = new UnionFind(N);
+        int edgesConnected = 0;
+        
+        if(add_edge != -1) {
+            uf.Union(vec[add_edge][0], vec[add_edge][1]);
+            sum += vec[add_edge][2];
+            edgesConnected++;
+        }
+        
 
-    final int mstWeight = getMSTWeight(n, edges, new int[] {}, -1);
+        for(int i = 0; i<vec.length; i++) {
+            
+            if(i == skip_edge)
+                continue;
+            
+            int u  = vec[i][0];
+            int v  = vec[i][1];
+            int wt = vec[i][2];
+            //O(@)
+            int parent_u = uf.find(u);
+            int parent_v = uf.find(v);
+            
+            if(parent_u != parent_v) {
+                uf.Union(u, v);
+                edgesConnected++;
+                sum += wt;
+            }
+            
+        }
 
-    for (int[] edge : edges) {
-      final int index = edge[3];
-      // Deleting `e` makes the MST weight increase or can't form a MST.
-      if (getMSTWeight(n, edges, new int[] {}, index) > mstWeight)
-        criticalEdges.add(index);
-      // If an edge can be in any MST, we can always add `edge` to the edge set.
-      else if (getMSTWeight(n, edges, edge, -1) == mstWeight)
-        pseudoCriticalEdges.add(index);
+        if(edgesConnected != N-1)
+            return Integer.MAX_VALUE;
+        
+        return sum;
     }
+    
+    public List<List<Integer>> findCriticalAndPseudoCriticalEdges(int n, int[][] edges) {
+        N = n;
+        
+        int m = edges.length;
+        int[][] newEdges = new int[m][4];
 
-    return new ArrayList<>(Arrays.asList(criticalEdges, pseudoCriticalEdges));
-  }
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < 3; j++) {
+                newEdges[i][j] = edges[i][j];
+            }
+            newEdges[i][3] = i;
+        }
 
-  private int getMSTWeight(int n, int[][] edges, int[] firstEdge, int deletedEdgeIndex) {
-    int mstWeight = 0;
-    UnionFind uf = new UnionFind(n);
+        // Sort edges based on weight
+        Arrays.sort(newEdges, Comparator.comparingInt(edge -> edge[2]));
 
-    if (firstEdge.length == 4) {
-      uf.unionByRank(firstEdge[0], firstEdge[1]);
-      mstWeight += firstEdge[2];
+        // Find MST weight using union-find
+        int MST_WEIGHT = Kruskal(newEdges, -1, -1);
+
+        List<List<Integer>> result = new ArrayList<>();
+        for (int i = 0; i < 2; i++) {
+            result.add(new ArrayList<>());
+        }
+
+        // Check each edge for critical and pseudo-critical
+        for (int i = 0; i < m; i++) {
+            
+            if(Kruskal(newEdges, i, -1) > MST_WEIGHT) { //skipping ith edge
+                result.get(0).add(newEdges[i][3]);
+            }
+            
+            else if(Kruskal(newEdges, -1, i) == MST_WEIGHT) { //Force add this ith edge
+                result.get(1).add(newEdges[i][3]);
+            }
+            
+        }
+
+        return result;
     }
+    
+    class UnionFind {
+        int[] parent;
+        int[] rank;
 
-    for (int[] edge : edges) {
-      final int u = edge[0];
-      final int v = edge[1];
-      final int weight = edge[2];
-      final int index = edge[3];
-      if (index == deletedEdgeIndex)
-        continue;
-      if (uf.find(u) == uf.find(v))
-        continue;
-      uf.unionByRank(u, v);
-      mstWeight += weight;
+        public UnionFind(int n) {
+            parent = new int[n];
+            rank = new int[n];
+            for (int i = 0; i < n; i++) {
+                    parent[i] = i;
+                    rank[i] = 0;
+            }
+        }
+
+        int find (int x) {
+            if (x == parent[x]) 
+                return x;
+
+            return parent[x] = find(parent[x]);
+        }
+
+        public void Union(int x, int y) {
+            int x_parent = find(x);
+            int y_parent = find(y);
+
+            if (x_parent == y_parent) 
+                return;
+
+            if(rank[x_parent] > rank[y_parent]) {
+                parent[y_parent] = x_parent;
+            } else if(rank[x_parent] < rank[y_parent]) {
+                parent[x_parent] = y_parent;
+            } else {
+                parent[x_parent] = y_parent;
+                rank[y_parent]++;
+            }
+
+        }
     }
-
-    final int root = uf.find(0);
-    for (int i = 0; i < n; ++i)
-      if (uf.find(i) != root)
-        return Integer.MAX_VALUE;
-
-    return mstWeight;
-  }
 }
