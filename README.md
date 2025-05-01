@@ -22,13 +22,28 @@
 |  |
 | ------- |
 | [0219-contains-duplicate-ii](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0219-contains-duplicate-ii) |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2527-count-subarrays-with-fixed-bounds) |
 ## Queue
 |  |
 | ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2527-count-subarrays-with-fixed-bounds) |
 ## Monotonic Queue
 |  |
 | ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2527-count-subarrays-with-fixed-bounds) |
+## Binary Search
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+## Greedy
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+## Sorting
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 <!---LeetCode Topics End-->
