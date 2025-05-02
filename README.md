@@ -10,6 +10,7 @@
 |  |
 | ------- |
 | [0076-minimum-window-substring](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0076-minimum-window-substring) |
+| [0868-push-dominoes](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0868-push-dominoes) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/ravikumar9555/Placement_Preparation/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 ## Sliding Window
 |  |
@@ -46,4 +47,12 @@
 |  |
 | ------- |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+## Two Pointers
+|  |
+| ------- |
+| [0868-push-dominoes](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0868-push-dominoes) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0868-push-dominoes](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0868-push-dominoes) |
 <!---LeetCode Topics End-->
