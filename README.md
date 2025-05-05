@@ -18,12 +18,14 @@
 | [0076-minimum-window-substring](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0076-minimum-window-substring) |
 | [0219-contains-duplicate-ii](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0219-contains-duplicate-ii) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/ravikumar9555/Placement_Preparation/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
+| [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/ravikumar9555/Placement_Preparation/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2211-k-radius-subarray-averages](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2211-k-radius-subarray-averages) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2527-count-subarrays-with-fixed-bounds) |
 ## Array
 |  |
 | ------- |
 | [0219-contains-duplicate-ii](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0219-contains-duplicate-ii) |
+| [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/ravikumar9555/Placement_Preparation/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2211-k-radius-subarray-averages](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2211-k-radius-subarray-averages) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2527-count-subarrays-with-fixed-bounds) |
@@ -58,4 +60,5 @@
 | ------- |
 | [0806-domino-and-tromino-tiling](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0806-domino-and-tromino-tiling) |
 | [0868-push-dominoes](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0868-push-dominoes) |
+| [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/ravikumar9555/Placement_Preparation/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 <!---LeetCode Topics End-->
