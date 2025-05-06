@@ -6,6 +6,7 @@
 | ------- |
 | [0076-minimum-window-substring](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0076-minimum-window-substring) |
 | [0219-contains-duplicate-ii](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0219-contains-duplicate-ii) |
+| [3225-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/ravikumar9555/Placement_Preparation/tree/master/3225-length-of-longest-subarray-with-at-most-k-frequency) |
 ## String
 |  |
 | ------- |
@@ -23,6 +24,7 @@
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/ravikumar9555/Placement_Preparation/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2211-k-radius-subarray-averages](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2211-k-radius-subarray-averages) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2527-count-subarrays-with-fixed-bounds) |
+| [3225-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/ravikumar9555/Placement_Preparation/tree/master/3225-length-of-longest-subarray-with-at-most-k-frequency) |
 ## Array
 |  |
 | ------- |
@@ -34,6 +36,7 @@
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2211-k-radius-subarray-averages](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2211-k-radius-subarray-averages) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2527-count-subarrays-with-fixed-bounds) |
+| [3225-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/ravikumar9555/Placement_Preparation/tree/master/3225-length-of-longest-subarray-with-at-most-k-frequency) |
 ## Queue
 |  |
 | ------- |
