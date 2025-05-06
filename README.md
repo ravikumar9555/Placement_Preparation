@@ -18,6 +18,7 @@
 | [0076-minimum-window-substring](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0076-minimum-window-substring) |
 | [0219-contains-duplicate-ii](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0239-sliding-window-maximum) |
+| [0713-subarray-product-less-than-k](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0713-subarray-product-less-than-k) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/ravikumar9555/Placement_Preparation/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/ravikumar9555/Placement_Preparation/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2211-k-radius-subarray-averages](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2211-k-radius-subarray-averages) |
@@ -27,6 +28,7 @@
 | ------- |
 | [0219-contains-duplicate-ii](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0239-sliding-window-maximum) |
+| [0713-subarray-product-less-than-k](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0713-subarray-product-less-than-k) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/ravikumar9555/Placement_Preparation/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2048-build-array-from-permutation](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2048-build-array-from-permutation) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
@@ -47,6 +49,7 @@
 ## Binary Search
 |  |
 | ------- |
+| [0713-subarray-product-less-than-k](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0713-subarray-product-less-than-k) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ravikumar9555/Placement_Preparation/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 ## Greedy
 |  |
@@ -74,4 +77,8 @@
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0239-sliding-window-maximum) |
+## Prefix Sum
+|  |
+| ------- |
+| [0713-subarray-product-less-than-k](https://github.com/ravikumar9555/Placement_Preparation/tree/master/0713-subarray-product-less-than-k) |
 <!---LeetCode Topics End-->
